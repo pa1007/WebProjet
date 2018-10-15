@@ -1,0 +1,94 @@
+body{
+    font-family:"Segoe UI Symbol", serif;
+    margin:0;
+    padding:0;
+}
+
+/* Début  de déclaration du menu */
+
+nav > ul{
+    margin:0;
+    padding:0;
+}
+
+nav li{
+    list-style-type:none;
+}
+
+nav > ul > li{
+    float:left;
+    position:relative;
+}
+
+.submenu{
+
+    color:black;
+    display:none;
+}
+
+nav{
+    width:100%;
+    background-color:red;
+}
+
+nav > ul::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+nav a{
+    display:inline-block;
+    text-decoration:none;
+}
+
+nav > ul > li > a{
+    padding:20px 30px;
+    /*Couleur des liens*/
+    color:white;
+}
+
+nav > ul > li:hover .submenu{
+    display:inline-block;
+    position:absolute;
+
+    /*Placement du sous menu*/
+    top:60px;
+    left:20px;
+    /*fin*/
+
+    padding:0;
+    z-index:5000;
+}
+
+.submenu li{
+    /* Changer la bordure en bas */
+    border-bottom:1px solid white;
+}
+
+.submenu li a{
+    padding:15px 30px;
+    color:dimgray;
+    width:270px;
+}
+
+#categorie #menucat:hover{
+    display:inline-block;
+}
+
+.menu-catégorie .submenu a{
+    /*Changer la couleur du text*/
+    color:white;
+}
+
+.menu-catégorie .submenu{
+    /*Changer la couleur du fond*/
+    background-color:plum;
+}
+
+nav > ul > li:hover a{
+    padding:15px 30px 20px 30px;
+}
+
+/* Fin  de déclaration du menu */
+
