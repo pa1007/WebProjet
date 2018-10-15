@@ -94,3 +94,39 @@ body{
 
 /* Fin  de déclaration du menu */
 
+/* Début e déclaration du footer */
+
+.footmenu{
+    background:red;
+    width:100%;
+    align-items:center;
+    display:inline-flex;
+    justify-content:center;
+}
+
+.footmenu > a{
+    margin:15px;
+    color:white;
+    text-decoration:none;
+    flex:inherit;
+}
+
+/* Fin  de déclaration du footer */
+/* Début  de déclaration du header */
+
+header{
+    /*Changer la couleur du fond*/
+    background:seagreen;
+    /*Fin*/
+    /*Changer la couleur du text*/
+    color:aqua;
+    /*Fin*/
+    /*Change for adjusting object*/
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    /*fin*/
+    text-shadow:black;
+    text-align:center;
+}
+
+/* Fin  de déclaration du header */
