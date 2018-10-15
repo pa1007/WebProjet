@@ -6,16 +6,16 @@ body{
 
 /* Début  de déclaration du menu */
 
-nav > ul{
+.navigation > ul{
     margin:0;
     padding:0;
 }
 
-nav li{
+.navigation li{
     list-style-type:none;
 }
 
-nav > ul > li{
+.navigation > ul > li{
     float:left;
     position:relative;
 }
@@ -26,29 +26,29 @@ nav > ul > li{
     display:none;
 }
 
-nav{
+.navigation{
     width:100%;
     background-color:red;
 }
 
-nav > ul::after{
+.navigation > ul::after{
     content:"";
     display:block;
     clear:both;
 }
 
-nav a{
+.navigation a{
     display:inline-block;
     text-decoration:none;
 }
 
-nav > ul > li > a{
+.navigation > ul > li > a{
     padding:20px 30px;
     /*Couleur des liens*/
     color:white;
 }
 
-nav > ul > li:hover .submenu{
+.navigation > ul > li:hover .submenu{
     display:inline-block;
     position:absolute;
 
@@ -79,14 +79,16 @@ nav > ul > li:hover .submenu{
 .menu-catégorie .submenu a{
     /*Changer la couleur du text*/
     color:white;
+    /*Fin*/
 }
 
 .menu-catégorie .submenu{
     /*Changer la couleur du fond*/
     background-color:plum;
+    /*Fin*/
 }
 
-nav > ul > li:hover a{
+.navigation > ul > li:hover a{
     padding:15px 30px 20px 30px;
 }
 
