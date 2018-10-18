@@ -130,3 +130,110 @@ header{
 }
 
 /* Fin  de déclaration du header */
+
+/* Début du diapo*/
+
+.c_slider{
+    position:relative;
+    width:640px;
+    height:310px;
+    overflow:hidden;
+}
+
+.c_slider .slider{
+    position:absolute;
+    left:0;
+    top:0;
+    width:500%;
+    height:310px;
+}
+
+figure{
+    position:relative;
+    display:inline-block;
+    padding:0;
+    margin:0;
+}
+
+@keyframes slider{
+    0%, 20%, 100%{
+        left:0
+    }
+    25%, 45%{
+        left:-100%
+    }
+    50%, 70%{
+        left:-200%
+    }
+    75%, 95%{
+        left:-300%
+    }
+}
+
+@-webkit-keyframes slider{
+    0%, 20%, 100%{
+        left:0
+    }
+    25%, 45%{
+        left:-100%
+    }
+    50%, 70%{
+        left:-200%
+    }
+    75%, 95%{
+        left:-300%
+    }
+}
+
+@-moz-keyframes slider{
+    0%, 20%, 100%{
+        left:0
+    }
+    25%, 45%{
+        left:-100%
+    }
+    50%, 70%{
+        left:-200%
+    }
+    75%, 95%{
+        left:-300%
+    }
+}
+
+@-o-keyframes slider{
+    0%, 20%, 100%{
+        left:0
+    }
+    25%, 45%{
+        left:-100%
+    }
+    50%, 70%{
+        left:-200%
+    }
+    75%, 95%{
+        left:-300%
+    }
+}
+
+@-ms-keyframes slider{
+    0%, 20%, 100%{
+        left:0
+    }
+    25%, 45%{
+        left:-100%
+    }
+    50%, 70%{
+        left:-200%
+    }
+    75%, 95%{
+        left:-300%
+    }
+}
+
+.slider{
+    animation:slider 45s infinite;
+}
+
+/* Fin du diapo*/
+
+
