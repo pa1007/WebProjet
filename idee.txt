@@ -1,24 +1,24 @@
-action:
+action:     red
 - Doctor Who
 - Nirvana in Fire
 https://mydramalist.com/9025-nirvana-in-fire
 
-drame:
+drame:      Noir
 - 13 Reasons Why
 - Secret of the Three Kingdoms
 https://mydramalist.com/23728-secrets-of-three-kingdoms
 
-mystère:
+mystère:    Blue
 -Sherlock
 - Candle in the tomb
 https://mydramalist.com/19236-candle-in-the-tomb
 
-romance:
+romance:    rose
 - How I Met Your Mother
 - Love 020
 https://mydramalist.com/15031-love-o2o
 
-fantaisie:
+fantaisie: blan
 - Game of throne
 - Tribes and Empires: Storm of Prophecy
 https://mydramalist.com/17023-tribes-and-empires-storm-of-prophecy
