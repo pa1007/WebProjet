@@ -1,5 +1,8 @@
 header{
-    color:black;
+    font-size: 4em;
+    font-family: fantasy;
+    color: black;
+    align-content: center;
 }
 
 footer{
