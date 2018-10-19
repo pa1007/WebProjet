@@ -1,13 +1,56 @@
+body{
+    background: radial-gradient();
+}
 header{
-    color:black;
+    font-size: 4em;
+    font-family: fantasy;
+    color: black;
+    text-align: center;
+    background-color: blanchedalmond;
+    padding: 10px;
+    border: double black;
+    border-radius: 15px;
+    margin : 30px 30px 40px 30px;
 }
 
 footer{
-    color:black;
+    font-size: 2em;
+    font-family: "Arial Nova Cond Light" ,sans-serif;
+    color: black;
+    text-align: center;
 }
 
 p{
-    color:black;
+    font-size: 1.5em;
+    font-family: "Arial Nova Cond Light" ,sans-serif;
+    color: black;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 10px 10px 10px 10px;
+    border: solid black;
+    border-radius: 15px;
+    margin : 30px 30px 40px 30px;
+}
+
+ul{
+    background-color: lightgray;
+    padding: 10px 10px 10px 10px;
+    border: solid black;
+    border-radius: 15px;
+    margin : 30px 30px 40px 30px;
+    width: 40%;
+}
+
+li{
+    font-size: 1em;
+    font-family: "Arial Nova Cond Light" ,sans-serif;
+    color: black;
+    text-align: left;
+    background: linear-gradient(white,pink,lightpink);
+    padding: 10px;
+    border: solid black;
+    border-radius: 15px;
+    margin : 1px 1px 1px 1px;
 }
 
 .image{
