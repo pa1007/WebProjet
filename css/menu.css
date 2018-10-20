@@ -1,6 +1,25 @@
-/*Mobile*/
-@media handheld{
-    /* Début  de déclaration du menu */
+/*MENU
+    .menu -> div principale (a tout dedans)
+        .navigation -> navigation principale nav (a tout dedans sauf sup)
+            .menu-principale -> ul principale (a tout dedans sauf sup)
+                .menu-catégorie -> li de toutes les catégorie comporte ul submenu
+                    .submenu -> ul avec lien redirection
+                    #catégie -> ul avec seulement les liens des catégorie
+                .menu-film -> li de tout les film
+                    .submenu -> ul avec lien redirection
+                    #allfilm -> ul avec seulement les liens des films
+                .menu-autre -> li avec toutes les liens vers les contact et a propos
+                    .submenu -> ul avec lien redirection
+                    #autreme -> ul avec seulement les liens des page annexe
+*/
+/*Debut media queries*/
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width:1281px){
+    /*menu start*/
     .navigation > ul{
         margin:0;
         padding:0;
@@ -21,9 +40,131 @@
     }
 
     .navigation{
-        width:80%;
+        width:100%;
+        /*display:inline-block;*/
+        background-color:red;
+    }
+
+    .navigation > ul::after{
+        content:"";
         display:block;
-        background-color:darkblue;
+        clear:both;
+    }
+
+    .navigation a{
+        display:block;
+        text-decoration:none;
+        float:left;
+        width:100%;
+        height:30px;
+        line-height:30px; /* Doit etre equivalent a la hauteur du menu pour centrer le texte verticalement */
+        /*padding:-3px 10px;*/
+        text-align:center;
+    }
+
+    .navigation > ul > li > a{
+        padding:20px 15px;
+        /*Couleur des liens*/
+        color:white;
+    }
+
+    .navigation > ul > li:hover .submenu{
+        display:block;
+        position:absolute;
+
+        /*Placement du sous menu*/
+        top:0;
+        right:120px;
+        /*fin*/
+
+        padding:0;
+        z-index:5000;
+    }
+
+    .submenu li{
+        /* Changer la bordure en bas */
+        border-bottom:1px solid white;
+        float:left;
+    }
+
+    /*.submenu li a{*/
+    /*padding:15px 30px;*/
+    /*color:dimgray;*/
+    /*width:270px;*/
+    /*}*/
+    /*#categorie #menucat:hover{*/
+    /*display:inline-block;*/
+    /*}*/
+    .menu-catégorie .submenu a{
+        /*Changer la couleur du text*/
+        color:white;
+        /*Fin*/
+    }
+
+    .menu-catégorie .submenu{
+        /*Changer la couleur du fond*/
+        background-color:plum;
+        /*Fin*/
+    }
+
+    .navigation > ul > li:hover a{
+        padding:15px 30px 20px 30px;
+    }
+
+    .navigation ul a{
+        display:block;
+    }
+
+    body{
+        display:grid;
+        grid-template-columns:90% 10%;
+        grid-template-rows:100%;
+
+    }
+
+    .menu{
+        grid-column:2;
+        /*display:flow;*/
+    }
+
+    .titre, h2{
+        text-align:center;
+        color:white;
+    }
+
+    /*menu end*/
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px 150%
+*/
+
+@media (min-width:1025px) and (max-width:1280px){
+    /* Début  de déclaration du menu */
+    .navigation > ul{
+        margin:0;
+        padding:0;
+    }
+
+    .navigation li{
+        list-style-type:none;
+    }
+
+    .navigation > ul > li{
+        float:left;
+        position:relative;
+    }
+
+    .submenu{
+
+        color:black;
+        display:none;
+    }
+
+    .navigation{
+        width:100%;
+        background-color:red;
     }
 
     .navigation > ul::after{
@@ -79,7 +220,7 @@
 
     .menu-catégorie .submenu{
         /*Changer la couleur du fond*/
-        background-color:blue;
+        background-color:plum;
         /*Fin*/
     }
 
@@ -87,114 +228,290 @@
         padding:15px 30px 20px 30px;
     }
 
-    /* Fin  de déclaration du menu */
+    /*Fin menu*/
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px 200%
+*/
+
+@media (min-width:768px) and (max-width:1024px){
+    /*menu start*/
+    .menu-principale > li > h2{
+        color:white;
+        text-align:center;
+    }
+
     .menu{
-        grid-column:2;
+        display:inline-block;
+        background:red;
+        width:100%;
+        font-size:50px;
     }
 
-        body{
-            display:grid;
-            grid-template-columns:80% 20%;
-        }
+    .menu > .navigation > ul{
+        list-style:none;
     }
 
-    @media screen and(max-width:5000px){
-        /* Début  de déclaration du menu */
-        .navigation > ul{
-            margin:0;
-            padding:0;
-        }
+    .menu-principale > li > a{
+        text-decoration:none;
+        color:white;
+    }
 
-        .navigation li{
-            list-style-type:none;
-        }
+    .menu-principale > li > a:hover{
+        text-decoration:underline blue;
+        color:blue;
+    }
 
-        .navigation > ul > li{
-            float:left;
-            position:relative;
-        }
+    .menu-principale{
+        margin-left:50px;
+    }
 
-        .submenu{
-            color:black;
-            display:none;
-        }
-
-        .navigation{
-            width:80%;
-            display:block;
-            background-color:red;
-        }
-
-        .navigation > ul::after{
-            content:"";
-            display:block;
-            clear:both;
-        }
-
-        .navigation a{
-            display:inline-block;
-            text-decoration:none;
-        }
-
-        .navigation > ul > li > a{
-            padding:20px 30px;
-            /*Couleur des liens*/
-            color:white;
-        }
-
-        .navigation > ul > li:hover .submenu{
-            display:inline-block;
-            position:absolute;
-
-            /*Placement du sous menu*/
-            top:60px;
-            left:20px;
-            /*fin*/
-
-            padding:0;
-            z-index:5000;
-        }
-
-        .submenu li{
-            /* Changer la bordure en bas */
-            border-bottom:1px solid white;
-        }
-
-        .submenu li a{
-            padding:15px 30px;
-            color:dimgray;
-            width:270px;
-        }
-
-        #categorie #menucat:hover{
-            display:inline-block;
-        }
-
-        .menu-catégorie .submenu a{
-            /*Changer la couleur du text*/
-            color:white;
-            /*Fin*/
-        }
-
-        .menu-catégorie .submenu{
-            /*Changer la couleur du fond*/
-            background-color:plum;
-            /*Fin*/
-        }
-
-        .navigation > ul > li:hover a{
-            padding:15px 30px 20px 30px;
-        }
-
-        /* Fin  de déclaration du menu */
-        .menu{
-            grid-column:2;
-        }
-
-        body{
-            display:grid;
-            grid-template-columns:80% 20%;
-        }
+    .submenu > li{
+        height:70px;
+        background:white;
+        border:black solid 2px;
+        margin:15px 5px 5px -5px;
+        padding-top:5px;
+        width:500px;
+        box-shadow:10px 8px 2px -6px rgba(0, 0, 0, 0.75);
+        text-align:center;
 
     }
 
+    .submenu > li:first-child{
+        border-radius:16px 16px 0 0;
+    }
+
+    .submenu > li:last-child{
+        border-radius:0 0 16px 16px;
+    }
+
+    .submenu > li > a{
+        text-decoration:none;
+        color:black;
+        letter-spacing:1px;
+        vertical-align:center;
+    }
+
+    .submenu > li > a:hover{
+        text-decoration:underline red;
+    }
+
+    /*menu end*/
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width:768px) and (max-width:1024px) and (orientation:landscape){
+    /*menu start*/
+    .menu-principale > li > h2{
+        color:white;
+        text-align:center;
+    }
+
+    .menu{
+        display:inline-block;
+        background:brown;
+        width:100%;
+        font-size:50px;
+    }
+
+    .menu > .navigation > ul{
+        list-style:none;
+    }
+
+    .menu-principale > li > a{
+        text-decoration:none;
+        color:white;
+    }
+
+    .menu-principale > li > a:hover{
+        text-decoration:underline blue;
+        color:blue;
+    }
+
+    .menu-principale{
+        margin-left:50px;
+    }
+
+    .submenu > li{
+        height:70px;
+        background:white;
+        border:black solid 2px;
+        margin:15px 5px 5px -5px;
+        padding-top:5px;
+        width:500px;
+        box-shadow:10px 8px 2px -6px rgba(0, 0, 0, 0.75);
+        text-align:center;
+
+    }
+
+    .submenu > li:first-child{
+        border-radius:16px 16px 0 0;
+    }
+
+    .submenu > li:last-child{
+        border-radius:0 0 16px 16px;
+    }
+
+    .submenu > li > a{
+        text-decoration:none;
+        color:black;
+        letter-spacing:1px;
+        vertical-align:center;
+    }
+
+    .submenu > li > a:hover{
+        text-decoration:underline red;
+    }
+
+    /*menu end*/
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px 300%
+*/
+
+@media (min-width:481px) and (max-width:767px){
+    /*menu start*/
+    .menu-principale > li > h2{
+        color:white;
+        text-align:center;
+    }
+
+    .menu{
+        display:inline-block;
+        background:green;
+        width:100%;
+        font-size:50px;
+    }
+
+    .menu > .navigation > ul{
+        list-style:none;
+    }
+
+    .menu-principale > li > a{
+        text-decoration:none;
+        color:white;
+    }
+
+    .menu-principale > li > a:hover{
+        text-decoration:underline blue;
+        color:blue;
+    }
+
+    .menu-principale{
+        margin-left:50px;
+    }
+
+    .submenu > li{
+        height:70px;
+        background:white;
+        border:black solid 2px;
+        margin:15px 5px 5px -5px;
+        padding-top:5px;
+        width:500px;
+        box-shadow:10px 8px 2px -6px rgba(0, 0, 0, 0.75);
+        text-align:center;
+
+    }
+
+    .submenu > li:first-child{
+        border-radius:16px 16px 0 0;
+    }
+
+    .submenu > li:last-child{
+        border-radius:0 0 16px 16px;
+    }
+
+    .submenu > li > a{
+        text-decoration:none;
+        color:black;
+        letter-spacing:1px;
+        vertical-align:center;
+    }
+
+    .submenu > li > a:hover{
+        text-decoration:underline red;
+    }
+
+    /*menu end*/
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+  400%
+*/
+
+@media (min-width:320px) and (max-width:480px){
+    /*menu start*/
+    .menu-principale > li > h2{
+        color:white;
+        text-align:center;
+    }
+
+    .menu{
+        display:inline-block;
+        background:red;
+        width:100%;
+        font-size:50px;
+    }
+
+    .menu > .navigation > ul{
+        list-style:none;
+    }
+
+    .menu-principale > li > a{
+        text-decoration:none;
+        color:white;
+    }
+
+    .menu-principale > li > a:hover{
+        text-decoration:underline blue;
+        color:blue;
+    }
+
+    .menu-principale{
+        margin-left:50px;
+    }
+
+    .submenu > li{
+        height:70px;
+        background:white;
+        border:black solid 2px;
+        margin:15px 5px 5px -5px;
+        padding-top:5px;
+        width:500px;
+        box-shadow:10px 8px 2px -6px rgba(0, 0, 0, 0.75);
+        text-align:center;
+
+    }
+
+    .submenu > li:first-child{
+        border-radius:16px 16px 0 0;
+    }
+
+    .submenu > li:last-child{
+        border-radius:0 0 16px 16px;
+    }
+
+    .submenu > li > a{
+        text-decoration:none;
+        color:black;
+        letter-spacing:1px;
+        vertical-align:center;
+    }
+
+    .submenu > li > a:hover{
+        text-decoration:underline red;
+    }
+
+    /*menu end*/
+}
