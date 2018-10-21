@@ -9,30 +9,33 @@
 <header class="header"><h1 class=".big"> Titre du projet, je sais pas quoi metre ici </h1>
     <a name="top"></a> <!--Ref pour back on top link-->
 </header>
-<nav class="navigation">
-    <ul class="menu-principale">
-        <li class="menu-catégorie" id="menucat"><a href="all/index.html"> Toutes les catégories</a>
-            <ul class="submenu" id="categorie">
-                <li><a href="all/drame/index.html">Drame</a></li>
-                <li><a href="all/romance/index.html">Romance</a></li>
-                <li><a href="all/mystere/index.html">Mystère</a></li>
-                <li><a href="all/fantaisie/index.html">Fantaisie</a></li>
-                <li><a href="all/action/index.html">Action</a></li>
-            </ul>
-        </li>
-        <li class="menu-film"><a href="all/allfilm.html">Tout les films</a>
-            <ul class="submenu">
-                <li></li>
-            </ul>
-        </li>
-        <li class="menu-catégorie" id="autreC"><a href="about.html">Autre</a>
-            <ul class="submenu" id="autreme">
-                <li><a href="about.html">A propos</a></li>
-                <li><a href="#contact">Nous Contacter</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
+<div class="menu">
+    <nav class="navigation">
+        <ul class="menu-principale">
+            <li><h2 class="titre">Menu</h2></li>
+            <li class="menu-catégorie"><a href="../html/all/index.html"> Toutes les catégories</a>
+                <ul class="submenu" id="categorie">
+                    <li><a href="../html/all/drame/index.html">Drame</a></li>
+                    <li><a href="../html/all/romance/index.html">Romance</a></li>
+                    <li><a href="../html/all/mystere/index.html">Mystère</a></li>
+                    <li><a href="../html/all/fantaisie/index.html">Fantaisie</a></li>
+                    <li><a href="../html/all/action/index.html">Action</a></li>
+                </ul>
+            </li>
+            <li class="menu-film"><a href="../html/all/allfilm.html">Tous les films</a>
+                <ul class="submenu" id="allfilm">
+                    <li><a href="../html/all/allfilm.html">Voir tous les films</a></li>
+                </ul>
+            </li>
+            <li class="menu-catégorie" id="autreC"><a href="../html/about.html">Autre</a>
+                <ul class="submenu" id="autreme">
+                    <li><a href="../html/about.html">A propos</a></li>
+                    <li><a href="#contact">Nous Contacter</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
 <div class="description">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla mi eget odio ornare, eget mattis purus
         consectetur. Quisque urna magna, efficitur ut congue ac, sodales sit amet enim. Ut convallis sollicitudin diam,
@@ -54,20 +57,18 @@
     <div class="slider">
         <figure>
             <a href="all/drame/secret_of_the_three_kingdoms.html"><img
-                    src="../images/serie/secret_of_the_three_kingdoms.jpg" alt="" width="640" height="310" /></a>
+                    src="../images/serie/secret_of_the_three_kingdoms.jpg" alt="" class="imgslide" /></a>
         </figure>
         <figure>
-            <a href="all/drame/13_reason_why.html"><img src="../images/serie/13_reason_why.jpg" alt="" width="640"
-                                                        height="310" /></a>
+            <a href="all/drame/13_reason_why.html"><img src="../images/serie/13_reason_why.jpg" alt=""
+                                                        class="imgslide" /></a>
         </figure>
         <figure>
             <a href="all/fantaisie/tribes_and_empires_storm_of_prophecy.html"><img
-                    src="../images/serie/tribes_and_empires_storm_of_prophecy.jpg" alt="" width="640"
-                    height="310" /></a>
+                    src="../images/serie/tribes_and_empires_storm_of_prophecy.jpg" alt="" class="imgslide" /></a>
         </figure>
         <figure>
-            <a href="all/mystere/Sherlock.html"> <img src="../images/serie/Sherlock.jpg" alt="" width="640"
-                                                      height="310" /></a>
+            <a href="all/mystere/Sherlock.html"> <img src="../images/serie/Sherlock.jpg" alt="" class="imgslide" /></a>
         </figure>
     </div>
 </div>
@@ -97,11 +98,11 @@
         <a href="#top">Aller En haut de la page</a>
         <p> Nous contacter : </p>
         <a name="contact">
-            <ul class="contact">
-                <!-- todo Changer les emails ! -->
-                <li>Email : <a href="mailto: bllblbblbb@gmail.com">bllblbblbb@gmail.com</a></li>
-                <li>Email : <a href="mailto: bllblbblbb@gmail.com">bllbldzqdbblbb@gmail.com</a></li>
-            </ul>
+            <!-- todo Changer les emails ! -->
+            <p class="foottext">Email : <a href="mailto: bllblbblbb@gmail.com">bllblbblbb@gmail.com</a>
+                <br />
+                Email : <a href="mailto: bllblbblbb@gmail.com">bllbldzqdbblbb@gmail.com</a></p>
+
         </a>
     </nav>
 </footer>
