@@ -401,6 +401,15 @@ body{
         font-size:30px;
     }
 
+    .text, .description{
+        margin-left:45px;
+    }
+
+    .text:first-letter, .description:first-letter{
+        margin-left:30px;
+    }
+
+
 }
 
 /*
@@ -472,6 +481,7 @@ body{
     }
 
     /*menu end*/
+
 }
 
 /*
@@ -666,7 +676,6 @@ body{
 
 .footmenu > p{
     margin-left:20px;
-    margin-right:-35px;
 }
 
 .contact > a{
