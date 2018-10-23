@@ -62,21 +62,21 @@ li{
 }
 
 .red{
-    background-color: red;
+    background: radial-gradient(circle at center,#E57373,#E53935,#B71C1C);
 }
 
 .black{
-    background-color: black;
+    background: radial-gradient(circle at center,#9E9E9E,#616161,#212121);
 }
 
 .pink{
-    background-color: pink;
+    background: radial-gradient(circle at center,#7986CB,#3949AB,#1A237E);
 }
 
 .blue{
-    background-color: blue;
+    background: radial-gradient(circle at center,#7986CB,#3949AB,#1A237E);
 }
 
 .white{
-    background-color: white;
+    background: radial-gradient(circle at center,#FFEE58,#FDD835,#F57F17);
 }
