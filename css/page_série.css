@@ -1,67 +1,73 @@
 body{
     display: grid;
-    grid-template-rows: 300px 600px 300px 300px 100px;
-    grid-template-columns: repeat(5,20%);
+    grid-template-rows: 150px 500px 230px 300px 100px;
+    grid-template-columns: repeat(5,17%);
+    grid-column-gap: 3%;
+    grid-row-gap: 20px;
     grid-gap: 10px;
 }
 header{
     grid-row: 1;
     grid-column-start: 1;
-    grid-column-end: 5;
-    font-size: 4em;
+    grid-column-end: 7;
+    font-size: 3em;
     font-family: fantasy;
-    color: black;
     text-align: center;
-    background-color: blanchedalmond;
+    align-content: center;
+    background-color: white;
     padding: 10px;
     border: double black;
     border-radius: 15px;
     margin : 30px 30px 40px 30px;
+    overflow: hidden;
 }
 
 footer{
     grid-row: 5;
     grid-column-start: 1;
-    grid-column-end: 5;
-    font-size: 2em;
+    grid-column-end: 7;
+    font-size: 1em;
     font-family: "Arial Nova Cond Light" ,sans-serif;
-    color: black;
     text-align: center;
+    background-color: white;
+    padding: 10px;
+    border: double black;
+    border-radius: 15px;
+    overflow: hidden;
+    margin : 15px 0px 0px 0px;
 }
 
 p{
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: "Arial Nova Cond Light" ,sans-serif;
-    color: black;
     text-align: center;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 10px 10px 10px 10px;
     border: solid black;
     border-radius: 15px;
     margin : 30px 30px 40px 30px;
     grid-row: 2;
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 6;
+    overflow: hidden;
 }
 
 .ul_left{
-    background-color: lightgray;
+    font-size: 10px;
+    background-color: white;
     padding: 10px 10px 10px 10px;
-    border: solid black;
+    border: solid gray;
     border-radius: 15px;
-    margin : 30px 30px 40px 30px;
-    width: 40%;
     grid-row: 4;
     grid-column: 2;
 }
 
 .ul_right{
-    background-color: lightgray;
+    font-size: 10px;
+    background-color: white;
     padding: 10px 10px 10px 10px;
-    border: solid black;
+    border: solid gray;
     border-radius: 15px;
-    margin : 30px 30px 40px 30px;
-    width: 40%;
     grid-row: 4;
     grid-column: 4;
 }
@@ -71,7 +77,7 @@ li{
     font-family: "Arial Nova Cond Light" ,sans-serif;
     color: black;
     text-align: left;
-    background: linear-gradient(white,pink,lightpink);
+    background: linear-gradient(to right,white,lightgray);
     padding: 10px;
     border: solid black;
     border-radius: 15px;
@@ -79,28 +85,35 @@ li{
 }
 
 .image_series{
-    background-color: black;
-    grid-column: 1;
-    grid-row: 2;
+    border-radius: 10px;
+    grid-area: auto;
+    object-fit: contain;
 }
 
 .image_right{
     background-color: brown;
+    border: solid black;
+    border-radius: 10px;
     grid-row: 4;
     grid-column: 1;
 }
 
 .image_left{
     background-color: brown;
+    border: solid black;
+    border-radius: 10px;
     grid-row: 4;
     grid-column: 3;
 }
 
 .trailer{
-    background-color: aquamarine;
+    background-color: white;
+    border-radius: 15px;
+    border: double black;
+    margin : 15px 15px 15px 15px;
     grid-row: 3;
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 7;
 }
 
 .red{
@@ -119,6 +132,6 @@ li{
     background: radial-gradient(circle at center,#7986CB,#3949AB,#1A237E);
 }
 
-.white{
+.yellow{
     background: radial-gradient(circle at center,#FFEE58,#FDD835,#F57F17);
 }
