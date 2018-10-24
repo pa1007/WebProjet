@@ -1,7 +1,13 @@
 body{
-    background: radial-gradient();
+    display: grid;
+    grid-template-rows: 300px 600px 300px 300px 100px;
+    grid-template-columns: repeat(5,20%);
+    grid-gap: 10px;
 }
 header{
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
     font-size: 4em;
     font-family: fantasy;
     color: black;
@@ -14,6 +20,9 @@ header{
 }
 
 footer{
+    grid-row: 5;
+    grid-column-start: 1;
+    grid-column-end: 5;
     font-size: 2em;
     font-family: "Arial Nova Cond Light" ,sans-serif;
     color: black;
@@ -30,15 +39,31 @@ p{
     border: solid black;
     border-radius: 15px;
     margin : 30px 30px 40px 30px;
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
-ul{
+.ul_left{
     background-color: lightgray;
     padding: 10px 10px 10px 10px;
     border: solid black;
     border-radius: 15px;
     margin : 30px 30px 40px 30px;
     width: 40%;
+    grid-row: 4;
+    grid-column: 2;
+}
+
+.ul_right{
+    background-color: lightgray;
+    padding: 10px 10px 10px 10px;
+    border: solid black;
+    border-radius: 15px;
+    margin : 30px 30px 40px 30px;
+    width: 40%;
+    grid-row: 4;
+    grid-column: 4;
 }
 
 li{
@@ -53,12 +78,29 @@ li{
     margin : 1px 1px 1px 1px;
 }
 
-.image{
+.image_series{
+    background-color: black;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.image_right{
     background-color: brown;
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.image_left{
+    background-color: brown;
+    grid-row: 4;
+    grid-column: 3;
 }
 
 .trailer{
     background-color: aquamarine;
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
 }
 
 .red{
@@ -70,7 +112,7 @@ li{
 }
 
 .pink{
-    background: radial-gradient(circle at center,#7986CB,#3949AB,#1A237E);
+    background: radial-gradient(circle at center,#F8BBD0,#F06292,#E91E63);
 }
 
 .blue{
