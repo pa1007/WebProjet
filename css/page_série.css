@@ -1,6 +1,6 @@
 body{
     display: grid;
-    grid-template-rows: 150px 500px 230px 300px 100px;
+    grid-template-rows: 150px 500px 230px repeat(3,300px)100px;
     grid-template-columns: repeat(5,17%);
     grid-column-gap: 3%;
     grid-row-gap: 20px;
@@ -23,7 +23,7 @@ header{
 }
 
 footer{
-    grid-row: 5;
+    grid-row: 7;
     grid-column-start: 1;
     grid-column-end: 7;
     font-size: 1em;
@@ -52,60 +52,6 @@ p{
     overflow: hidden;
 }
 
-.ul_left{
-    font-size: 10px;
-    background-color: white;
-    padding: 10px 10px 10px 10px;
-    border: solid gray;
-    border-radius: 15px;
-    grid-row: 4;
-    grid-column: 2;
-}
-
-.ul_right{
-    font-size: 10px;
-    background-color: white;
-    padding: 10px 10px 10px 10px;
-    border: solid gray;
-    border-radius: 15px;
-    grid-row: 4;
-    grid-column: 4;
-}
-
-li{
-    font-size: 1em;
-    font-family: "Arial Nova Cond Light" ,sans-serif;
-    color: black;
-    text-align: left;
-    background: linear-gradient(to right,white,lightgray);
-    padding: 10px;
-    border: solid black;
-    border-radius: 15px;
-    margin : 1px 1px 1px 1px;
-}
-
-.image_series{
-    border-radius: 10px;
-    grid-area: auto;
-    object-fit: contain;
-}
-
-.image_right{
-    background-color: brown;
-    border: solid black;
-    border-radius: 10px;
-    grid-row: 4;
-    grid-column: 1;
-}
-
-.image_left{
-    background-color: brown;
-    border: solid black;
-    border-radius: 10px;
-    grid-row: 4;
-    grid-column: 3;
-}
-
 .trailer{
     background-color: white;
     border-radius: 15px;
@@ -115,6 +61,93 @@ li{
     grid-column-start: 1;
     grid-column-end: 7;
 }
+
+li{
+    font-size: 1em;
+    font-family: "Arial Nova Cond Light" ,sans-serif;
+    color: black;
+    text-align: left;
+    background: linear-gradient(to right,white,lightgray);
+    padding: 9px;
+    border: solid black;
+    border-radius: 15px;
+    margin : 1px 1px 1px 1px;
+}
+
+ul{
+    font-size: 10px;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    border: solid gray;
+    border-radius: 15px;
+}
+
+.description_1{
+    grid-row: 4;
+    grid-column: 2;
+}
+
+.description_2{
+    grid-row: 4;
+    grid-column: 4;
+}
+
+.description_3{
+    grid-row: 5;
+    grid-column: 2;
+}
+
+.description_4{
+    grid-row: 5;
+    grid-column: 4;
+}
+
+.description_5{
+    grid-row: 6;
+    grid-column: 2;
+}
+
+.image_series{
+    border-radius: 10px;
+    grid-area: auto;
+    object-fit: contain;
+}
+
+.image_1{
+    border: solid black;
+    border-radius: 10px;
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.image_2{
+    border: solid black;
+    border-radius: 10px;
+    grid-row: 4;
+    grid-column: 3;
+}
+
+.image_3{
+    border: solid black;
+    border-radius: 10px;
+    grid-row: 5;
+    grid-column: 1;
+}
+
+.image_4{
+    border: solid black;
+    border-radius: 10px;
+    grid-row: 5;
+    grid-column: 3;
+}
+
+.image_5{
+    border: solid black;
+    border-radius: 10px;
+    grid-row: 6;
+    grid-column: 1;
+}
+
 
 .red{
     background: radial-gradient(circle at center,#E57373,#E53935,#B71C1C);
