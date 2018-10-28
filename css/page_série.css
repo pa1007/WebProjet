@@ -1,44 +1,65 @@
 body{
-    background: radial-gradient();
+    display: grid;
+    grid-template-rows: 150px 500px 230px repeat(3,300px)100px;
+    grid-template-columns: repeat(5,17%);
+    grid-column-gap: 3%;
+    grid-row-gap: 20px;
+    grid-gap: 10px;
 }
 header{
-    font-size: 4em;
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    font-size: 3em;
     font-family: fantasy;
-    color: black;
     text-align: center;
-    background-color: blanchedalmond;
+    align-content: center;
+    background-color: white;
     padding: 10px;
     border: double black;
     border-radius: 15px;
     margin : 30px 30px 40px 30px;
+    overflow: hidden;
 }
 
 footer{
-    font-size: 2em;
+    grid-row: 7;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    font-size: 1em;
     font-family: "Arial Nova Cond Light" ,sans-serif;
-    color: black;
     text-align: center;
+    background-color: white;
+    padding: 10px;
+    border: double black;
+    border-radius: 15px;
+    overflow: hidden;
+    margin : 15px 0px 0px 0px;
 }
 
 p{
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: "Arial Nova Cond Light" ,sans-serif;
-    color: black;
     text-align: center;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 10px 10px 10px 10px;
     border: solid black;
     border-radius: 15px;
     margin : 30px 30px 40px 30px;
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    overflow: hidden;
 }
 
-ul{
-    background-color: lightgray;
-    padding: 10px 10px 10px 10px;
-    border: solid black;
+.trailer{
+    background-color: white;
     border-radius: 15px;
-    margin : 30px 30px 40px 30px;
-    width: 40%;
+    border: double black;
+    margin : 15px 15px 15px 15px;
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 7;
 }
 
 li{
@@ -46,37 +67,104 @@ li{
     font-family: "Arial Nova Cond Light" ,sans-serif;
     color: black;
     text-align: left;
-    background: linear-gradient(white,pink,lightpink);
-    padding: 10px;
+    background: linear-gradient(to right,white,lightgray);
+    padding: 9px;
     border: solid black;
     border-radius: 15px;
     margin : 1px 1px 1px 1px;
 }
 
-.image{
-    background-color: brown;
+ul{
+    font-size: 10px;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    border: solid gray;
+    border-radius: 15px;
 }
 
-.trailer{
-    background-color: aquamarine;
+.description_1{
+    grid-row: 4;
+    grid-column: 2;
 }
+
+.description_2{
+    grid-row: 4;
+    grid-column: 4;
+}
+
+.description_3{
+    grid-row: 5;
+    grid-column: 2;
+}
+
+.description_4{
+    grid-row: 5;
+    grid-column: 4;
+}
+
+.description_5{
+    grid-row: 6;
+    grid-column: 2;
+}
+
+.image_series{
+    border-radius: 10px;
+    grid-area: auto;
+    object-fit: contain;
+}
+
+.image_1{
+    border: solid black;
+    border-radius: 10px;
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.image_2{
+    border: solid black;
+    border-radius: 10px;
+    grid-row: 4;
+    grid-column: 3;
+}
+
+.image_3{
+    border: solid black;
+    border-radius: 10px;
+    grid-row: 5;
+    grid-column: 1;
+}
+
+.image_4{
+    border: solid black;
+    border-radius: 10px;
+    grid-row: 5;
+    grid-column: 3;
+}
+
+.image_5{
+    border: solid black;
+    border-radius: 10px;
+    grid-row: 6;
+    grid-column: 1;
+}
+
 
 .red{
-    background-color: red;
+    background: radial-gradient(circle at center,#E57373,#E53935,#B71C1C);
 }
 
 .black{
-    background-color: black;
+    background: radial-gradient(circle at center,#9E9E9E,#616161,#212121);
 }
 
 .pink{
-    background-color: pink;
+    background: radial-gradient(circle at center,#F8BBD0,#F06292,#E91E63);
 }
 
 .blue{
-    background-color: blue;
+    background: radial-gradient(circle at center,#7986CB,#3949AB,#1A237E);
 }
 
-.white{
-    background-color: white;
+.yellow{
+    background: radial-gradient(circle at center,#FFEE58,#FDD835,#F57F17);
 }
