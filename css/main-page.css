@@ -17,8 +17,13 @@ body{
         padding:0;
         height:500px;
         width:150px;
-        flex:border-box;
+        /*flex:border-box;*/
         justify-content:left;
+    }
+
+    html{
+        margin:0;
+        padding:0;
     }
 
     .navigation li{
@@ -39,6 +44,12 @@ body{
         width:100%;
         /*display:inline-block;*/
         background-color:red;
+        position:fixed;
+        margin-top:100px;
+    }
+
+    #autreC{
+        padding-right:54px;
     }
 
     .navigation > ul::after{
@@ -70,11 +81,11 @@ body{
 
         /*Placement du sous menu*/
         top:0;
-        right:120px;
+        right:150px;
         /*fin*/
 
         padding:0;
-        z-index:5000;
+        z-index:5;
     }
 
     .submenu li{
@@ -83,14 +94,12 @@ body{
         float:left;
     }
 
-    /*.submenu li a{*/
-    /*padding:15px 30px;*/
-    /*color:dimgray;*/
-    /*width:270px;*/
-    /*}*/
-    /*#categorie #menucat:hover{*/
-    /*display:inline-block;*/
-    /*}*/
+    .submenu li a{
+        padding:15px 30px;
+        color:dimgray;
+        width:270px;
+    }
+
     .menu-catégorie .submenu a{
         /*Changer la couleur du text*/
         color:white;
@@ -114,8 +123,7 @@ body{
     body{
         display:grid;
         grid-template-columns:90% 10%;
-        grid-template-rows:repeat(5, 20%);
-
+        grid-template-rows:90px 225px 600px 225px 140px;
     }
 
     .menu{
@@ -149,7 +157,7 @@ body{
         height:540px;
     }
 
-    /**/
+    /* Adaptation */
     .text{
         grid-row:4;
         grid-column:1;
@@ -157,12 +165,186 @@ body{
 
     footer{
         grid-column-start:1;
-        grid-column-end:3;
+        grid-column-end:4;
     }
 
     header{
         /*Change for adjusting object*/
-        margin:0 0 21px 0;
+        margin:0 0 0 0;
+        padding:8px 0 8px 0;
+        /*fin*/
+        grid-column-start:1;
+        grid-column-end:3;
+        grid-row:1;
+    }
+
+    .imgslide{
+        width:640px;
+        height:310px;
+    }
+
+    .footer{
+        display:inline-flex;
+    }
+
+    .footer > p, .footer > ul{
+        /*Changer la couleur de la police */
+        color:white;
+        text-decoration:none;
+        list-style-type:none;
+        /*fin*/
+        margin-left:-150px;
+    }
+
+    .foottext{
+        margin-top:-15px;
+    }
+
+    .c_slider{
+        border:darkblue outset 4px;
+        box-shadow:14px 20px 5px 0 rgba(0, 0, 0, 0.75);
+        border-radius:32px 32px 32px 32px;
+        margin-bottom:20px;
+    }
+
+    .description:first-letter, .text:first-letter{
+        margin-left:35px;
+    }
+
+    .description, .text{
+        margin-left:15px;
+        margin-right:15px;
+    }
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px 150%
+*/
+
+@media (min-width:1025px) and (max-width:1280px){
+    /* Début  de déclaration du menu */
+    .navigation > ul{
+        margin:0;
+        padding:0;
+    }
+
+    html{
+        margin:0;
+        padding:0;
+    }
+
+    .navigation li{
+        list-style-type:none;
+    }
+
+    .navigation > ul > li{
+        float:left;
+        position:relative;
+    }
+
+    .submenu{
+        color:black;
+        display:none;
+    }
+
+    .navigation{
+        width:100%;
+        height:70px;
+
+        background-color:red;
+    }
+
+    .navigation > ul::after{
+        content:"";
+        display:inline-block;
+        clear:both;
+    }
+
+    .navigation a{
+        display:flex;
+        text-decoration:none;
+        justify-content:center;
+        width:100%;
+        line-height:30px; /* Doit etre equivalent a la hauteur du menu pour centrer le texte verticalement */
+        /*padding:-3px 10px;*/
+        text-align:center;
+    }
+
+    .navigation > ul > li > a{
+        padding:0 15px 20px 15px;
+        margin-top:20px;
+        /*Couleur des liens*/
+        color:white;
+    }
+
+    .navigation > ul > li:hover .submenu{
+        display:inline-block;
+        position:absolute;
+
+        /*Placement du sous menu*/
+        top:70px;
+        left:20px;
+        /*fin*/
+
+        padding:0;
+        z-index:1000;
+    }
+
+    .submenu li{
+        /* Changer la bordure en bas */
+        border-bottom:1px solid white;
+        float:left;
+    }
+
+    .submenu li a{
+        /*padding:15px 30px;*/
+        color:dimgray;
+        width:270px;
+    }
+
+    .menu-catégorie .submenu a{
+        /*Changer la couleur du text*/
+        color:white;
+        /*Fin*/
+    }
+
+    .menu-catégorie .submenu{
+        /*Changer la couleur du fond*/
+        background-color:plum;
+        /*Fin*/
+    }
+
+    .navigation > ul > li:hover a{
+        /*padding:15px 30px 20px 0px;*/
+    }
+
+    .navigation ul a{
+        display:inline-block;
+    }
+
+    .titre, h2{
+        text-align:center;
+        color:white;
+    }
+
+    /*menu end*/
+    /*Diapo addaptation*/
+    .c_slider{
+        margin-left:auto;
+        margin-right:auto;
+
+    }
+
+    .c_slider, .slider > figure > a > img{
+        width:640px;
+        height:540px;
+    }
+
+    header{
+        /*Change for adjusting object*/
+        margin:0 0 0 0;
         padding:8px 0 8px 0;
         /*fin*/
     }
@@ -185,112 +367,24 @@ body{
         margin-left:-150px;
     }
 
+    .foottext{
+        margin-top:-15px;
+    }
+
     .c_slider{
-        border:darkblue outset 2px;
+        border:darkblue outset 4px;
         box-shadow:14px 20px 5px 0 rgba(0, 0, 0, 0.75);
         border-radius:32px 32px 32px 32px;
+        margin-bottom:20px;
     }
 
-}
-
-/*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px 150%
-*/
-
-@media (min-width:1025px) and (max-width:1280px){
-    /* Début  de déclaration du menu */
-    .navigation > ul{
-        margin:0;
-        padding:0;
+    .description:first-letter, .text:first-letter{
+        margin-left:35px;
     }
 
-    .navigation li{
-        list-style-type:none;
-    }
-
-    .navigation > ul > li{
-        float:left;
-        position:relative;
-    }
-
-    .submenu{
-
-        color:black;
-        display:none;
-    }
-
-    .navigation{
-        width:100%;
-        background-color:red;
-    }
-
-    .navigation > ul::after{
-        content:"";
-        display:block;
-        clear:both;
-    }
-
-    .navigation a{
-        display:inline-block;
-        text-decoration:none;
-    }
-
-    .navigation > ul > li > a{
-        padding:20px 30px;
-        /*Couleur des liens*/
-        color:white;
-    }
-
-    .navigation > ul > li:hover .submenu{
-        display:inline-block;
-        position:absolute;
-
-        /*Placement du sous menu*/
-        top:60px;
-        left:20px;
-        /*fin*/
-
-        padding:0;
-        z-index:5000;
-    }
-
-    .submenu li{
-        /* Changer la bordure en bas */
-        border-bottom:1px solid white;
-    }
-
-    .submenu li a{
-        padding:15px 30px;
-        color:dimgray;
-        width:270px;
-    }
-
-    #categorie #menucat:hover{
-        display:inline-block;
-    }
-
-    .menu-catégorie .submenu a{
-        /*Changer la couleur du text*/
-        color:white;
-        /*Fin*/
-    }
-
-    .menu-catégorie .submenu{
-        /*Changer la couleur du fond*/
-        background-color:plum;
-        /*Fin*/
-    }
-
-    .navigation > ul > li:hover a{
-        padding:15px 30px 20px 30px;
-    }
-
-    /*Fin menu*/
-    header{
-        /*Change for adjusting object*/
-        padding:8px 0 8px 0;
-        /*fin*/
+    .description, .text{
+        margin-left:15px;
+        margin-right:15px;
     }
 
 }
@@ -409,7 +503,6 @@ body{
         margin-left:30px;
     }
 
-
 }
 
 /*
@@ -426,7 +519,7 @@ body{
 
     .menu{
         display:inline-block;
-        background:brown;
+        background:red;
         width:100%;
         font-size:50px;
     }
@@ -498,7 +591,7 @@ body{
 
     .menu{
         display:inline-block;
-        background:green;
+        background:red;
         width:100%;
         font-size:50px;
     }
@@ -553,6 +646,10 @@ body{
     }
 
     /*menu end*/
+    /*Disarition diapo*/
+    .c_slider{
+        display:none;
+    }
 }
 
 /*
@@ -671,7 +768,6 @@ body{
 .contact{
     list-style:none;
     color:white;
-    horiz-align:center;
 }
 
 .footmenu > p{
@@ -700,7 +796,6 @@ header{
     /*Change for adjusting object*/
     padding:8px 0 8px 0;
     /*fin*/
-    text-shadow:black;
     text-align:center;
 }
 
