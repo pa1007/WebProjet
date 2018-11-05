@@ -131,9 +131,12 @@
     body{
         display:grid;
         grid-template-columns:90% 10%;
-        grid-template-rows:repeat(9, 20%);
+        grid-template-rows:68px 224px 850px 224px 154px;
     }
 
+    p{
+        font-size:20px;
+    }
     .menu{
         grid-column:2;
         grid-row-start:1;
@@ -147,9 +150,7 @@
 
     /*menu end*/
     .maquette{
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:30px;
+        margin:30px auto;
         grid-row:3;
         display:grid;
         grid-template-columns:150px 150px;
@@ -396,7 +397,73 @@
         color:white;
     }
 
-    /*Fin menu*/
+    .maquette{
+        margin:30px 35%;
+        grid-row:3;
+        display:grid;
+        grid-template-columns:150px 150px;
+        grid-template-rows:repeat(2, 400px);
+        grid-row-gap:50px;
+        grid-column-gap:25px;
+    }
+
+    .subdiv{
+        width:150px;
+        height:350px;
+    }
+
+    .subdiv > p{
+        color:black;
+        font-size:25px;
+
+        z-index:25;
+    }
+
+    .subdiv > img{
+        width:150px;
+        height:300px;
+        border:5px black solid;
+        border-radius:20px;
+
+    }
+
+    #Df{
+        grid-column:1;
+        grid-row:1;
+    }
+
+    #Df > img:hover{
+        transform:scale(2);
+    }
+
+    #Dl{
+        grid-column:1;
+        grid-row:2;
+    }
+
+    #Dl > img:hover{
+        transform:scale(2);
+    }
+
+    #Ds{
+        grid-column:2;
+        grid-row:1;
+        margin-bottom:15px;
+    }
+
+    #Ds > img:hover{
+        transform:scale(2);
+    }
+
+    #Dt{
+        grid-column:2;
+        grid-row:2;
+    }
+
+    #Dt > img:hover{
+        transform:scale(2);
+    }
+
 }
 
 /*
@@ -467,7 +534,69 @@
         text-decoration:underline red;
     }
 
-    /*menu end*/
+    .text, .description{
+        margin-left:45px;
+    }
+
+    .text:first-letter, .description:first-letter{
+        margin-left:70px;
+    }
+
+    .subdiv > img{
+        width:300px;
+        height:400px;
+        border:5px black solid;
+        border-radius:20px;
+
+    }
+
+    .maquette{
+        margin-left:450px;
+    }
+
+    .subdiv{
+        width:300px;
+        height:450px;
+        margin-bottom:80px;
+    }
+
+    .subdiv > p{
+        color:black;
+        font-size:25px;
+
+        z-index:25;
+    }
+
+    #Df{
+
+    }
+
+    #Df > img:hover{
+        transform:scale(2);
+    }
+
+    #Dl{
+    }
+
+    #Dl > img:hover{
+        transform:scale(2);
+    }
+
+    #Ds{
+        margin-bottom:15px;
+    }
+
+    #Ds > img:hover{
+        transform:scale(2);
+    }
+
+    #Dt{
+    }
+
+    #Dt > img:hover{
+        transform:scale(2);
+    }
+
 }
 
 /*
@@ -538,7 +667,69 @@
         text-decoration:underline red;
     }
 
-    /*menu end*/
+    .text, .description{
+        margin-left:45px;
+    }
+
+    .text:first-letter, .description:first-letter{
+        margin-left:70px;
+    }
+
+    .subdiv > img{
+        width:300px;
+        height:400px;
+        border:5px black solid;
+        border-radius:20px;
+
+    }
+
+    .maquette{
+        margin-left:450px;
+    }
+
+    .subdiv{
+        width:300px;
+        height:450px;
+        margin-bottom:80px;
+    }
+
+    .subdiv > p{
+        color:black;
+        font-size:25px;
+
+        z-index:25;
+    }
+
+    #Df{
+
+    }
+
+    #Df > img:hover{
+        transform:scale(2);
+    }
+
+    #Dl{
+    }
+
+    #Dl > img:hover{
+        transform:scale(2);
+    }
+
+    #Ds{
+        margin-bottom:15px;
+    }
+
+    #Ds > img:hover{
+        transform:scale(2);
+    }
+
+    #Dt{
+    }
+
+    #Dt > img:hover{
+        transform:scale(2);
+    }
+
 }
 
 /*
@@ -547,7 +738,6 @@
 */
 
 @media (min-width:481px) and (max-width:767px){
-    /*menu start*/
     .menu-principale > li > h2{
         color:white;
         text-align:center;
@@ -607,6 +797,61 @@
 
     .submenu > li > a:hover{
         text-decoration:underline red;
+    }
+
+    .subdiv > img{
+        width:300px;
+        height:400px;
+        border:5px black solid;
+        border-radius:20px;
+
+    }
+
+    .maquette{
+        margin-left:450px;
+    }
+
+    .subdiv{
+        width:300px;
+        height:450px;
+        margin-bottom:80px;
+    }
+
+    .subdiv > p{
+        color:black;
+        font-size:25px;
+
+        z-index:25;
+    }
+
+    #Df{
+
+    }
+
+    #Df > img:hover{
+        transform:scale(2);
+    }
+
+    #Dl{
+    }
+
+    #Dl > img:hover{
+        transform:scale(2);
+    }
+
+    #Ds{
+        margin-bottom:15px;
+    }
+
+    #Ds > img:hover{
+        transform:scale(2);
+    }
+
+    #Dt{
+    }
+
+    #Dt > img:hover{
+        transform:scale(2);
     }
 
     /*menu end*/
@@ -619,7 +864,6 @@
 */
 
 @media (min-width:320px) and (max-width:480px){
-    /*menu start*/
     .menu-principale > li > h2{
         color:white;
         text-align:center;
@@ -681,5 +925,130 @@
         text-decoration:underline red;
     }
 
+    .subdiv > img{
+        width:300px;
+        height:400px;
+        border:5px black solid;
+        border-radius:20px;
+
+    }
+
+    .maquette{
+        margin-left:450px;
+    }
+
+    .subdiv{
+        width:300px;
+        height:450px;
+        margin-bottom:80px;
+    }
+
+    .subdiv > p{
+        color:black;
+        font-size:25px;
+
+        z-index:25;
+    }
+
+    #Df{
+
+    }
+
+    #Df > img:hover{
+        transform:scale(2);
+    }
+
+    #Dl{
+    }
+
+    #Dl > img:hover{
+        transform:scale(2);
+    }
+
+    #Ds{
+        margin-bottom:15px;
+    }
+
+    #Ds > img:hover{
+        transform:scale(2);
+    }
+
+    #Dt{
+    }
+
+    #Dt > img:hover{
+        transform:scale(2);
+    }
+
     /*menu end*/
 }
+
+/*Main*/
+
+.footer{
+    background:red;
+    width:100%;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+.footer > p, .footer > ul{
+    /*Changer la couleur de la police */
+    color:white;
+    text-decoration:none;
+    list-style-type:none;
+    /*fin*/
+    margin-left:-150px;
+}
+
+.footer > ul{
+    margin-left:-25px;
+    margin-right:40px;
+
+}
+
+.footmenu > a{
+    margin:15px;
+    color:white;
+    text-decoration:none;
+    flex:inherit;
+}
+
+.contact{
+    list-style:none;
+    color:white;
+}
+
+.footmenu > p{
+    margin-left:20px;
+}
+
+.contact > a{
+    text-decoration:none;
+
+}
+
+.contact > a:hover{
+    text-decoration:underline;
+}
+
+/*Main*/
+
+/* Début  de déclaration du header */
+
+header{
+    /*Changer la couleur du fond*/
+    background:seagreen;
+    /*Fin*/
+    /*Changer la couleur du text*/
+    color:aqua;
+    /*Fin*/
+    /*Change for adjusting object*/
+    padding:8px 0 8px 0;
+    /*fin*/
+    text-align:center;
+}
+
+/* Fin  de déclaration du header */
