@@ -452,7 +452,7 @@ body{
     .c_slider{
         border:solid black 12px;
         border-radius:50px 50px 50px 50px;
-        padding:5px 0 -2px;
+        padding:5px 0 0;
         margin-left:50px;
         box-shadow:18px 19px 5px 0 rgba(0, 0, 0, 0.75);
     }
