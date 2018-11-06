@@ -1,0 +1,102 @@
+img{
+    width:430px;
+    height:640px;
+}
+
+.container{
+    display:flex;
+    justify-content:space-between;
+}
+
+.right{
+margin-right:100px;
+}
+
+.left{
+margin-right:50px;
+}
+
+#sep{
+    font-size:30em;
+    transform: scale(.5, 1)
+
+}
+
+/*Header et footer commun*/
+header{
+    font-size:3em;
+    font-family:fantasy;
+    text-align:center;
+    align-content:center;
+    background-color:white;
+    padding:10px;
+    border:double black;
+    border-radius:15px;
+    overflow:hidden;
+    margin-bottom:15px;
+}
+
+footer{
+    font-size:1em;
+    font-family:"Arial Nova Cond Light", sans-serif;
+    text-align:center;
+    background-color:white;
+    padding:10px;
+    border:double black;
+    border-radius:15px;
+    margin:15px 0 0 0;
+    overflow:hidden;
+}
+
+/*Fin header et footer commun*/
+/*Début couleurs*/
+#red{
+    background:radial-gradient(circle at center, #E57373, #E53935, #B71C1C);
+}
+
+#black{
+    background:radial-gradient(circle at center, #9E9E9E, #616161, #212121);
+}
+
+#pink{
+    background:radial-gradient(circle at center, #F8BBD0, #F06292, #E91E63);
+}
+
+#blue{
+    background:radial-gradient(circle at center, #7986CB, #3949AB, #1A237E);
+}
+
+#yellow{
+    background:radial-gradient(circle at center, #FFEE58, #FDD835, #F57F17);
+}
+
+.black2{
+    background:radial-gradient(ellipse at center, rgba(76, 76, 76, 1) 0%, rgba(89, 89, 89, 1) 12%, rgba(102, 102, 102, 1) 17%, rgba(71, 71, 71, 1) 25%, rgba(44, 44, 44, 1) 30%, rgba(0, 0, 0, 1) 45%, rgba(17, 17, 17, 1) 70%, rgba(43, 43, 43, 1) 77%, rgba(28, 28, 28, 1) 91%, rgba(19, 19, 19, 1) 100%);
+}
+
+/*Fin couleurs*/
+
+/*début Liens changement */
+a{
+    text-decoration:none;
+}
+
+footer > a:link{
+    color:black;
+}
+
+footer > a:visited{
+    color:gray;
+}
+
+footer > a:hover{
+
+    color:red;
+    font-size:1.5em;
+}
+
+/*Fin Liens changement*/
+
+::selection{
+    color:red;
+}

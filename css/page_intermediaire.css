@@ -61,12 +61,17 @@
     }
 
     .sublink:hover h3{
-        transform:scale(4);
+        transform:scale(3.5);
         text-shadow:4px 3px 0 #7A7A7A;
         color:#d3d3d3;
     }
 
     /*Fin page genre*/
+
+    /*Début Page intermédiaire*/
+
+
+    /*Fin Page intermédiaire*/
 }
 
 /*
@@ -375,3 +380,28 @@ footer{
 }
 
 /*Fin couleurs*/
+
+/*début Liens changement */
+a{
+    text-decoration:none;
+}
+
+a:link{
+    color:black;
+}
+
+a:visited{
+    color:gray;
+}
+
+a:hover{
+
+    color:red;
+    font-size:1.5em;
+}
+
+/*Fin Liens changement*/
+
+::selection{
+    color:red;
+}
