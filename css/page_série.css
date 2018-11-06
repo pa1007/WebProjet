@@ -359,7 +359,7 @@ header{
 }
 
 footer{
-    font-size: 1em;
+    font-size: 1.5em;
     font-family: "Arial Nova Cond Light" ,sans-serif;
     text-align: center;
     background-color: white;
@@ -408,3 +408,24 @@ iframe {
     height:100%;
     border-radius: 15px;
 }
+
+a{
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+a:visited {
+    color: gray;
+}
+a:hover {
+
+    color: red;
+    font-size: 1.5em;
+}
+
+::selection {
+    color: red;
+}
+
