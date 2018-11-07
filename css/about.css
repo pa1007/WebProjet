@@ -1,22 +1,3 @@
-/*MENU
-    .menu -> div principale (a tout dedans)
-        .navigation -> navigation principale nav (a tout dedans sauf sup)
-            .menu-principale -> ul principale (a tout dedans sauf sup)
-                .menu-catégorie -> li de toutes les catégorie comporte ul submenu
-                    .submenu -> ul avec lien redirection
-                    #catégie -> ul avec seulement les liens des catégorie
-                .menu-film -> li de tout les film
-                    .submenu -> ul avec lien redirection
-                    #allfilm -> ul avec seulement les liens des films
-                .menu-autre -> li avec toutes les liens vers les contact et a propos
-                    .submenu -> ul avec lien redirection
-                    #autreme -> ul avec seulement les liens des page annexe
-*/
-/*Debut media queries*/
-/*
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
 
 @media (min-width:1281px){
     /*menu start*/
@@ -131,12 +112,13 @@
     body{
         display:grid;
         grid-template-columns:90% 10%;
-        grid-template-rows:68px 224px 850px 224px 154px;
+        grid-template-rows:68px 224px 830px 200px 154px;
     }
 
     p{
         font-size:20px;
     }
+
     .menu{
         grid-column:2;
         grid-row-start:1;
@@ -150,7 +132,7 @@
 
     /*menu end*/
     .maquette{
-        margin:30px auto;
+        margin:70px auto;
         grid-row:3;
         display:grid;
         grid-template-columns:150px 150px;
@@ -222,7 +204,9 @@
     }
 
     .conc{
+        margin-top:-180px;
         grid-row:7;
+        /*margin-bottom:-180px;*/
     }
 
     .footer{
@@ -286,16 +270,16 @@
     /*menu end*/
 }
 
-/*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px 150%
-*/
 
 @media (min-width:1025px) and (max-width:1280px){
     /* Début  de déclaration du menu */
     .navigation > ul{
         margin:0;
         padding:0;
+    }
+
+    #allfilm{
+        background-color:plum;
     }
 
     html{
@@ -466,10 +450,6 @@
 
 }
 
-/*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px 200%
-*/
 
 @media (min-width:768px) and (max-width:1024px){
     /*menu start*/
@@ -599,10 +579,6 @@
 
 }
 
-/*
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
 
 @media (min-width:768px) and (max-width:1024px) and (orientation:landscape){
     /*menu start*/
@@ -732,10 +708,6 @@
 
 }
 
-/*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px 300%
-*/
 
 @media (min-width:481px) and (max-width:767px){
     .menu-principale > li > h2{
@@ -807,10 +779,6 @@
 
     }
 
-    .maquette{
-        margin-left:450px;
-    }
-
     .subdiv{
         width:300px;
         height:450px;
@@ -824,44 +792,13 @@
         z-index:25;
     }
 
-    #Df{
-
-    }
-
-    #Df > img:hover{
-        transform:scale(2);
-    }
-
-    #Dl{
-    }
-
-    #Dl > img:hover{
-        transform:scale(2);
-    }
-
     #Ds{
         margin-bottom:15px;
-    }
-
-    #Ds > img:hover{
-        transform:scale(2);
-    }
-
-    #Dt{
-    }
-
-    #Dt > img:hover{
-        transform:scale(2);
     }
 
     /*menu end*/
 }
 
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-  400%
-*/
 
 @media (min-width:320px) and (max-width:480px){
     .menu-principale > li > h2{
@@ -933,10 +870,6 @@
 
     }
 
-    .maquette{
-        margin-left:450px;
-    }
-
     .subdiv{
         width:300px;
         height:450px;
@@ -950,34 +883,9 @@
         z-index:25;
     }
 
-    #Df{
-
-    }
-
-    #Df > img:hover{
-        transform:scale(2);
-    }
-
-    #Dl{
-    }
-
-    #Dl > img:hover{
-        transform:scale(2);
-    }
 
     #Ds{
         margin-bottom:15px;
-    }
-
-    #Ds > img:hover{
-        transform:scale(2);
-    }
-
-    #Dt{
-    }
-
-    #Dt > img:hover{
-        transform:scale(2);
     }
 
     /*menu end*/
@@ -1049,6 +957,10 @@ header{
     padding:8px 0 8px 0;
     /*fin*/
     text-align:center;
+}
+
+.conc > p:first-letter, .txtintro > p:first-letter{
+    margin-left:35px;
 }
 
 /* Fin  de déclaration du header */

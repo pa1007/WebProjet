@@ -5,10 +5,6 @@ body{
 }
 
 /*Debut media queries*/
-/*
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
 
 @media (min-width:1281px){
     /*menu start*/
@@ -218,11 +214,6 @@ body{
 
 }
 
-/*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px 150%
-*/
-
 @media (min-width:1025px) and (max-width:1280px){
     /* Début  de déclaration du menu */
     .navigation > ul{
@@ -389,11 +380,6 @@ body{
 
 }
 
-/*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px 200%
-*/
-
 @media (min-width:768px) and (max-width:1024px){
     /*menu start*/
     .menu-principale > li > h2{
@@ -466,7 +452,7 @@ body{
     .c_slider{
         border:solid black 12px;
         border-radius:50px 50px 50px 50px;
-        padding:5px 0 -2px;
+        padding:5px 0 0;
         margin-left:50px;
         box-shadow:18px 19px 5px 0 rgba(0, 0, 0, 0.75);
     }
@@ -504,11 +490,6 @@ body{
     }
 
 }
-
-/*
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
 
 @media (min-width:768px) and (max-width:1024px) and (orientation:landscape){
     /*menu start*/
@@ -576,11 +557,6 @@ body{
     /*menu end*/
 
 }
-
-/*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px 300%
-*/
 
 @media (min-width:481px) and (max-width:767px){
     /*menu start*/
@@ -651,12 +627,6 @@ body{
         display:none;
     }
 }
-
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-  400%
-*/
 
 @media (min-width:320px) and (max-width:480px){
     /*menu start*/
