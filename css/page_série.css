@@ -16,7 +16,7 @@
             grid-column-start: 1;
             grid-column-end: 7;
             margin : 30px 30px 40px 30px;
-            background-color: black;
+            background-color: white;
         }
     }
 
@@ -129,7 +129,7 @@
             grid-row: 1;
             grid-column-start: 1;
             grid-column-end: 4;
-            background-color: fuchsia;
+            background-color: white;
             margin : 30px 30px 40px 30px;
         }
     }
@@ -139,7 +139,7 @@
             grid-row: 1;
             grid-column-start: 1;
             grid-column-end: 4;
-            background-color: deepskyblue;
+            background-color: white;
             margin : 30px 30px 40px 30px;
         }
     }
@@ -258,7 +258,7 @@
         }
 
         .header{
-            background-color: lawngreen;
+            background-color: white;
             margin : 30px 10px 40px 10px;
         }
     }
@@ -270,7 +270,7 @@
         }
 
         .header{
-            background-color: darkred;
+            background-color: white;
             margin : 30px 15px 40px 15px;
         }
     }
