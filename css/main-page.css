@@ -811,5 +811,7 @@ figure{
 .slider{
     animation:slider 45s infinite;
 }
-
+.changeColor{
+  color:#F8BBD0;
+}
 /* Fin du diapo*/
