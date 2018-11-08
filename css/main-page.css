@@ -119,7 +119,7 @@ body{
     body{
         display:grid;
         grid-template-columns:90% 10%;
-        grid-template-rows:90px 225px 600px 225px 140px;
+        grid-template-rows:90px 225px 600px 180px 140px;
     }
 
     .menu{
